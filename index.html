@@ -10,11 +10,16 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f7f2;
+            background-color: #ffffff; /* Fundo da página agora é branco puro */
         }
 
         .velox-yellow {
             background-color: #fbd304;
+        }
+
+        /* Sombra suave para o cartão se destacar no fundo branco */
+        .card-shadow {
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
         }
 
         .btn-shadow {
@@ -25,14 +30,13 @@
 <body class="min-h-screen flex items-center justify-center p-6">
 
     <!-- Card Principal -->
-    <main class="max-w-xl w-full bg-white rounded-[2.5rem] shadow-xl overflow-hidden p-10 md:p-16 flex flex-col items-center border-t-[6px] border-[#fbd304]">
+    <main class="max-w-xl w-full bg-white rounded-[2.5rem] card-shadow overflow-hidden p-10 md:p-16 flex flex-col items-center border border-gray-100 border-t-[6px] border-t-[#fbd304]">
         
         <!-- Espaço para o Logótipo -->
-        <div class="mb-12 w-full flex justify-center">
-            <!-- Procure por logo.png na mesma pasta do projeto -->
+        <div class="mb-12 w-full flex justify-center bg-white">
             <img src="logo.png" 
                  alt="Velox Soluções Técnicas" 
-                 class="max-h-32 w-auto object-contain">
+                 class="max-h-32 w-auto object-contain bg-white">
         </div>
 
         <!-- Título -->
